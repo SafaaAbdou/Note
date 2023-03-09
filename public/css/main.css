@@ -1,0 +1,537 @@
+
+/* Start Variables */
+:root{
+    --main-color: #FFF;
+    --seconed-color:#F24444;
+    --light-color: #5CE3F2;
+    --yellow-color:#F2B138;
+    --grey-color:#70778C;
+    --background-color: #1C2140;
+    --padding-left: 100px;
+    --padding-right:100px;
+
+
+}
+
+/* End Variables */
+
+
+
+/* Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html{
+
+
+ overflow-x: hidden;
+scroll-behavior: smooth;
+height: 100vh;
+background-color: var(--background-color);
+
+}
+
+
+/* Site Fonts */
+body {
+
+    font-family: 'Cairo', sans-serif;
+    background: var(--background-color);
+    min-height: 100vh;
+
+
+}
+
+
+.parent{
+background-color: var(--backgroung-color);
+
+
+
+}
+.container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+
+ul,ol{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+
+    color:var(--main-color);
+    text-decoration: none;
+}
+a:hover{
+
+    color:var(--background-color);
+
+}
+
+h2,h3,h4,h5,h6{
+
+    color: var(--main-color);
+}
+
+
+/* End Global Rules */
+
+/* start header */
+
+.header{
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 80px;
+    padding: 10px 20px;
+    background: var(--background-color);
+}
+.header h2{
+    font-size: 32px;
+    font-weight: 700px;
+    font-style: normal;
+    color: var(--main-color);
+    padding: 5px;
+    margin-left:5%;
+
+}
+.header a{
+
+    font-size: 16px;
+    font-weight: 500px;
+    font-style: normal;
+    text-align: center;
+    color: var(--main-color);
+    padding: 12px 20px;
+    margin-right:10%;
+    border: solid 2px var(--seconed-color);
+    border-radius: 10px 0px;
+
+}
+
+.header a:hover{
+    background: var(--seconed-color);
+
+
+
+}
+
+
+/* end header */
+.wl-na{
+    position:relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    padding:35px 40px;
+
+}
+.wl-na .wl-content{
+   position:relative;
+    display:inline-block;
+}
+
+.wl-na .wl-content a{
+    font-size: 18px;
+    font-weight: 500px;
+    font-style: normal;
+    text-align: center;
+    margin-right:10px;
+    color: var(--main-color);
+
+}
+
+.wl-na .wl-content .login{
+
+    font-size: 18px;
+    font-weight: 500px;
+    font-style: normal;
+    text-align: center;
+    margin-right:10px;
+    color: var(--main-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 22px;
+    background: var(--seconed-color);
+
+}
+
+.wl-na .wl-content .register{
+
+    font-size: 18px;
+    font-weight: 500px;
+    font-style: normal;
+    text-align: center;
+    margin-right:3px;
+    color: var(--main-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 22px;
+    background: var(--seconed-color);
+
+}
+
+.head{
+    position: relative;
+    top:30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    gap: 15px 30px;
+    
+}
+.head .head-txt{
+    position:relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: flex-start;
+    top: 60%;
+    left: 10%;
+    padding-right:20%;
+
+}
+
+.head .head-txt h2{
+    font-size: 22px;
+    font-weight: 600px;
+    font-style: normal;
+    color: var(--main-color);
+    padding: 10px 5px;
+    margin-bottom: 5px;
+
+}
+
+.head .head-txt h2 span{
+    font-size: 22px;
+    font-weight: 600px;
+    font-style: normal;
+    color: var(--seconed-color);
+    padding: 10px 5px;
+    margin-bottom: 5px;
+
+}
+
+.head .head-txt .easy{
+    width:fit-content;
+    font-size: 22px;
+    font-weight: 600px;
+    font-style: normal;
+    color: var(--yellow-color);
+    
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    border:solid 2px var(--yellow-color)
+}
+
+.head .head-txt p{
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: normal;
+    color: var(--main-color);
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    line-height:26px;
+
+
+}
+
+.head .head-img{
+    position:relative;
+    right:5%;
+    top:30%;
+
+
+}
+
+.head .head-img img {
+    max-width:500px;
+    
+}
+
+/* start note page */
+.note-item{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+    margin: 15px;
+    border: #4e4e4e;
+    border-radius: 22px;
+    background: var(--background-color);
+}
+.note-item .note-title{
+
+    font-size: 32px;
+    font-weight: 600px;
+    font-style: normal;
+
+    color: var(--main-color);
+    padding: 5px;
+
+
+}
+
+.note-item .note-text{
+
+    font-size: 18px;
+    font-weight: 400px;
+    font-style: normal;
+
+    color: var(--main-color);
+    padding: 0px 5px;
+
+
+
+}
+.note-item span{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 400px;
+    margin-left: 20px;
+    background: var(--seconed-color);
+}
+
+.no-items{
+    font-size: 24px;
+    font-weight: 400px;
+    font-style: normal;
+    color: var(--background-color);
+    padding: 0px 5px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+
+/* end note page */
+
+/* start create note page */
+
+.note-form{
+
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+
+
+
+}
+
+.note-form input{
+
+    font-size: 22px;
+    font-weight: 600px;
+    font-style: normal;
+    color: var(--background-color);
+    padding: 10px 5px;
+    margin-bottom: 20px;
+
+
+
+}
+
+.note-form textarea{
+
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: normal;
+    color: var(--background-color);
+    padding: 10px 5px;
+    margin-bottom: 20px;
+
+
+
+}
+
+.note-form input:focus,
+.note-form textarea:focus
+{
+
+    outline: 0;
+    box-shadow: none;
+    border: solid 1px var(--background-color);
+
+}
+.note-form button{
+    position: absolute;
+    width: fit-content;
+    left: 40%;
+    right: 40%;
+    top: 100%;
+    font-size: 18px;
+    font-weight: 500px;
+    font-style: normal;
+    text-align: center;
+    color: var(--main-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 22px;
+    background: var(--seconed-color);
+
+}
+.note-form .err-msg{
+
+    font-size: 16px;
+    font-weight: 500px;
+    font-style: normal;
+    color: var(--seconed-color);
+
+    margin-bottom: 10px;
+
+}
+
+/* end create note page */
+
+/* start note page */
+
+.note{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+
+
+}
+.note .note-date{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+
+
+
+}
+
+.note .note-date h4{
+    font-size: 16px;
+    font-weight: 500px;
+    font-style: normal;
+    color: var(--background-color);
+
+}
+
+.note .note-date span{
+    font-size: 18px;
+    font-weight: 500px;
+    font-style: normal;
+    color: var(--seconed-color);
+
+}
+.note .note-content{
+ position: relative;
+ width: 100%;
+ margin-top: 30px;
+padding: 20px;
+border-radius: 5px;
+border: solid 1px var(--background-color);
+}
+
+
+
+.note .note-content h2{
+
+    font-size: 22px;
+    font-weight: 600px;
+    font-style: normal;
+    color: var(--background-color);
+    padding: 10px 5px;
+    margin-bottom: 5px;
+
+}
+
+
+.note .note-content p{
+
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: normal;
+    color: var(--background-color);
+    padding: 10px 5px;
+    margin-bottom: 10px;
+
+}
+
+.note  .btn-div{
+
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-top: 30px;
+    margin-right: 5%;
+
+}
+
+.note  .btn-div form{
+    margin: 20px;
+
+}
+
+.note form button{
+
+    position: relative;
+    width: fit-content;
+    left: 40%;
+    right: 40%;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500px;
+    font-style: normal;
+    text-align: center;
+    color: var(--main-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 22px;
+    background: var(--seconed-color);
+}
+ .success-msg{
+
+    font-size: 16px;
+    font-weight: 500px;
+    font-style: normal;
+    color: var(--background-color);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background: #5CE3F2;
+    padding:5px;
+}
+
+
+
+
+/* end note page */
+
+
+
